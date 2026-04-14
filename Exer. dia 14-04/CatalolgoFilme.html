@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Streaming de Filmes</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #000;
+      color: white;
+    }
+
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background-color: #111;
+      padding: 20px;
+      border-right: 2px solid #222;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+      color: red;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #222;
+    }
+
+    .main {
+      flex: 1;
+    }
+
+ 
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    .signin {
+      background-color: red;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid darkred;
+    }
+
+    .signin:hover {
+      background-color: darkred;
+    }
+
+ 
+    .banner {
+      height: 80vh;
+      background-image: url('https://m.media-amazon.com/images/S/pv-target-images/3e7e9637c01ce8a45809bc218b2f4c6e609f5f12a340ed3f6647a60be451263e._SX1080_FMjpg_.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 40px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .info {
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    .info h1 {
+      margin-bottom: 10px;
+    }
+
+    .info .detalhes {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+
+    .info p {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .watch {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 1px solid darkred;
+    }
+
+    .watch:hover {
+      background-color: darkred;
+    }
+
+    
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 200px;
+      background-color: #1f1f1f;
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 10px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+
+    
+
+  </style>
+</head>
+<body>
+
+
+  <div class="sidebar">
+    <h2>🎬 Filmes</h2>
+    <a href="#">Início</a>
+    <a href="#">Populares</a>
+    <a href="#">Séries</a>
+    <a href="#">Minha Lista</a>
+  </div>
+
+ 
+  <div class="main">
+
+
+    <div class="topbar">
+      <a href="#" class="signin">Sign In</a>
+    </div>
+
+ 
+    <div class="banner">
+      <div class="info">
+        <h1>Alita Battle Angel</h1>
+        <div class="detalhes">⭐ 7.6 | ⏱️ 122 minutos</div>
+        <p>
+         Abandonada em um ferro-velho de Iron City, o ciborgue Alita é encontrada pelo cientista Dyson Ido. Revitalizada, ela acorda sem memória e reconhecimento do mundo em que se encontra. Determinada a conhecer seu passado e explorar suas habilidades surpreendentes de luta, Alita se torna uma poderosa caçadora de recompensas, combatendo forças mortais.
+        </p>
+        <a href="#" class="watch">▶ Watch Now</a>
+      </div>
+    </div>
+
+  
+    <div class="catalogo">
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/3/30/Kick-Ass_film_poster.jpg">
+      </div>
+
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91tsRRpebSL._AC_UF894,1000_QL80_.jpg">
+        
+      </div>
+
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/91RkoVP3syL._AC_UF894,1000_QL80_.jpg">
+      </div>
+
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTU0Nzc5NzI5NV5BMl5BanBnXkFtZTgwNTk1MDE4MDI@._V1_FMjpg_UX1000_.jpg">
+       <div>
+
+         <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/7/79/AcceleRacers_poster.png">
+       <div>
+       
+     
+
+       </div>
+       </div>
+       </div>
+      </div>
+
+    
+
+  
+
+</body>
+</html>
